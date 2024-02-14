@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+	version="4.0">
+	<servlet>
+
+		<servlet-name>LoginPage</servlet-name>
+		<servlet-class>atm.view.LoginPage</servlet-class>
+	</servlet>
+
+
+	<servlet-mapping>
+		<servlet-name>LoginPage</servlet-name>
+		<url-pattern>/login</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+
+		<servlet-name>SignUpPage</servlet-name>
+		<servlet-class>atm.view.SignupPage</servlet-class>
+	</servlet>
+
+
+	<servlet-mapping>
+		<servlet-name>SignUpPage</servlet-name>
+		<url-pattern>/signUp</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+
+		<servlet-name>CreateAccount</servlet-name>
+		<servlet-class>atm.view.CreateAccountPage</servlet-class>
+	</servlet>
+
+
+	<servlet-mapping>
+		<servlet-name>CreateAccount</servlet-name>
+		<url-pattern>/create</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+
+		<servlet-name>Deposit</servlet-name>
+		<servlet-class>atm.view.DepositPage</servlet-class>
+	</servlet>
+
+
+	<servlet-mapping>
+		<servlet-name>Deposit</servlet-name>
+		<url-pattern>/makeDeposit</url-pattern>
+	</servlet-mapping>
+	<servlet>
+
+		<servlet-name>Withdraw</servlet-name>
+		<servlet-class>atm.view.WithdrawalPage</servlet-class>
+	</servlet>
+
+
+	<servlet-mapping>
+		<servlet-name>Withdraw</servlet-name>
+		<url-pattern>/makeWithdraw</url-pattern>
+	</servlet-mapping>
+	<servlet>
+
+		<servlet-name>Transfer</servlet-name>
+		<servlet-class>atm.view.OnlineTransactionServlet</servlet-class>
+	</servlet>
+
+
+	<servlet-mapping>
+		<servlet-name>Transfer</servlet-name>
+		<url-pattern>/transfer</url-pattern>
+	</servlet-mapping>
+
+</web-app>
